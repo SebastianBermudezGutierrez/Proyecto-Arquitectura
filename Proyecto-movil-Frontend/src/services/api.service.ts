@@ -2,7 +2,7 @@
 import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
 import { useRouter } from 'vue-router';
 
-const API_BASE_URL = 'https://proyecto-movil-7h9c.onrender.com/api/v1';
+const API_BASE_URL = 'http://localhost:3000/api/v1';
 
 const api: AxiosInstance = axios.create({
   baseURL: API_BASE_URL,
