@@ -21,7 +21,7 @@ async function bootstrap() {
   );
 
   // 👈 agregar esto antes del listen
-  app.useStaticAssets(join(__dirname, '..', '..', 'frontend', 'www'));
+  app.useStaticAssets(join(__dirname, '..', '..', 'frontend', 'dist'));
 
   app.setGlobalPrefix('api/v1');
   await app.listen(process.env.PORT ?? 3000);
